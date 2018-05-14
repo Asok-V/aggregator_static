@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include header.ejs %>
+
+<style type="text/css">
+    .min_max_ht_dash{
+    min-height: 600px !important;
+    max-height: 600px !important
+}
+.counter{
+    background-color: #f61762;
+/*    margin-top: -5px;
+*/}
+</style>
+
+    <!--Main layout-->
+    <main>
+      <div id="header"></div>
+        <div class="container-fluid">
+
+            <!--Section: Button icon-->
+            <section>
+
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-4 mt-4 min_max_ht_dash">
+
+            <!--Card-->
+            <div class="card card-personal min_max_ht_dash">
+
+                <!--Card image-->
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg" alt="Card image cap">
+                <!--Card image-->
+
+                <!--Card content-->
+                <div class="card-body">
+                    <!--Title-->
+                    <a><h4 class="card-title title-one">Christine</h4></a>
+                    <p class="card-text">christine.connect@gmail.com</p>
+
+                    <!--Text-->
+                    <p class="card-text">Aged 24, Living in Seef.</p>
+                    <hr>
+                        <p>
+                            <i class="fas fa-suitcase pr-3 fa-2x pink-text align-middle"></i>5 Accounts from 3 Banks</p>
+                </div>
+                <!--Card content-->
+
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Grid column-->
+
+
+<div class="col-md-8 col-lg-8 mt-4 min_max_ht_dash">
+
+<div class="card card-personal min_max_ht_dash" style="overflow: auto;">
+
+<!-- Nav tabs -->
+<div class="tabs-wrapper">
+    <ul class="nav classic-tabs purple darken-4 pl-5 " role="tablist">
+        <li class="nav-item">
+            <a class="nav-link waves-light pl-5 active" data-toggle="tab" href="#panel51" role="tab">Your Assets</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-light pl-5 " data-toggle="tab" href="#panel52" role="tab">Your Liabilities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-light pl-5 " data-toggle="tab" href="#panel52" role="tab">Other Relationships</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Tab panels -->
+<div class="tab-content">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel51" role="tabpanel">
+
+
+<div class="col-md-12 mb-4">
+
+                    <div class="chip chip-lg purple darken-4 white-text">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person">3 Assets
+                    </div>
+
+                    <div class="chip chip-lg purple darken-4 white-text">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person">Your Net Asset Is 3245 BHD
+                    </div>
+
+
+
+                </div>
+
+
+
+<!--Accordion wrapper-->
+<div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+    <!-- Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingOne">
+            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="banks mb-0 black-text">
+                    <span class="badge badge-primary  pink accent-4 accent-4 badge-pill mr-4">1</span> Kuwait Finance House (Savings)
+                 <i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
+            <div class="card-body">
+
+<div class="row justify-content-md-center">
+    <div class="col-md-4 col-lg-4">
+
+                <div class="avatar mx-auto white text-center">
+                    <img src="../img/logos/kfh.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid"
+                    style="filter: grayscale(50%);max-width: 100px">
+                </div>
+                <br>
+                <h5 class="pink-text text-center">XX23122XXX</h5><br>
+                <h4 class="pink-text text-center">BHD 1532.980</h4>
+    </div>
+
+    <div class="col-md-8 col-lg-7 ">
+
+        <h4 class="text-center d-none">Last 3 transactions on this account</h5>
+
+        <!--Table-->
+        <table class="table table-hover table-responsive-md grey-text">
+
+            <!--Table head-->
+            <thead>
+                <tr>
+
+                    <th class="th-lg"><i class="fa fa-bars fa-lg pr-2" aria-hidden="true"></i> Category</th>
+                    <th class="th-lg"><i class="fa fa-hand-holding-usd fa-lg pr-2" aria-hidden="true"></i> How Much?</th>
+                    <th class="th-lg"><i class="fa fa-clock fa-lg pr-2" aria-hidden="true"></i> When?</th>
+                </tr>
+            </thead>
+            <!--Table head-->
+
+            <!--Table body-->
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-send pr-2" aria-hidden="true"></i>Dining</td>
+                    <td>BHD 67.564</td>
+                    <td>2 hours ago</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-send pr-2" aria-hidden="true"></i>Amazon</td>
+                    <td>BHD 89.660</td>
+                    <td>3 days ago</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-send pr-2" aria-hidden="true"></i>Electricity Bill</td>
+                    <td>BHD 120.660</td>
+                    <td>2 weeks ago</td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+
+        </table>
+        <!--Table-->
+
+        </div>
+
+</div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+
+    <!-- Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingTwo">
+            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="banks mb-0 black-text">
+                    <span class="badge badge-primary  pink accent-4 accent-4 badge-pill mr-4">2</span> Al Salam Bank (Current)<i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx" >
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+
+    <!-- Accordion card -->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingThree">
+            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="banks mb-0 black-text">
+                    <span class="badge badge-primary  pink accent-4 accent-4 badge-pill mr-4">3</span> Khaleeji Commercial Bank (Deposit)<i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+            </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <!-- Accordion card -->
+</div>
+<!--/.Accordion wrapper-->
+
+
+
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel52" role="tabpanel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 2-->
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+    </div>
+    <!--Grid row-->
+
+
+            </section>
+            <!--/Section: Button icon-->
+
+
+<div class="row mt-4">
+
+    <div class="col-md-5 mb-4">
+        <div class="card">
+            <h5 class="card-header purple darken-4 white-text">Your Recent Transactions</h5>
+            <div class="card-body" style="padding: 0px;">
+
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Amazon Shopping</h5>
+      <small>3 hours ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text"> Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"> <i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i> BHD 23.345</h6>
+    </div>
+  </a>
+
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Dining</h5>
+      <small>2 days ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Al Salam Bank (Current)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i> BHD 83.500</h6>
+    </div>
+  </a>
+
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Salary Credit</h5>
+      <small>2 days ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle green-text fa-xs  pr-2" aria-hidden="true"></i> BHD 1200</h6>
+    </div>
+  </a>
+
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>1 week ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>2 weeks ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>2 weeks ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>1 week ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>2 weeks ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>2 weeks ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+ <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Fuel - Shell</h5>
+      <small>2 weeks ago</small>
+    </div>
+    <p class="mb-1 grey-text">XX23122XXX</p>
+    <div class="d-flex w-100 justify-content-between">
+      <h6 class="mb-1 grey-text">Kuwait Finance House (Savings)</h6>
+      <h6 class="pink-text"><i class="fa fa-circle red-text fa-xs  pr-2" aria-hidden="true"></i>BHD 12.345</h6>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-7">
+        <div class="card">
+            <h5 class="card-header purple darken-4 white-text">Insights</h5>
+            <div class="card-body" style="padding: 0px;">
+
+<h5 class="mb-0 black-text text-center mt-4">
+                    <span class="badge badge-primary  pink accent-4 accent-4 badge-pill mr-4">1</span> Your Net Worth is Fluctuating in last 6 months
+</h5>
+<div id="chartIn_lines" class="mt-3 ml-4 pl-1 chartresponsive1" ></div>
+
+<hr>
+
+<h5 class="mb-0 black-text text-center mt-4">
+                    <span class="badge badge-primary  pink accent-4 accent-4 badge-pill mr-4">2</span> Budget for current month
+</h5>
+ <div id="cc_pie" class="mb-2 mt-1 ml-4 chartresponsive2"></div>
+<hr>
+
+<h5 class="mb-0 black-text text-center mt-4">
+                    <span class="badge badge-primary  pink accent-4 accent-4 badge-pill mr-4">3</span> Budget utilisation for current month
+</h5>
+ <div id="chart_Col" class="ml-5 mt-3 mb-2 chartresponsive3" ></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+        <!--Footer-->
+<footer class="page-footer font-small stylish-color-dark mt-4">
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> Nurture Software Solutions</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+    </body>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script type="text/javascript" src="../js/app/dash_charts.js"></script>
+
+    </html>

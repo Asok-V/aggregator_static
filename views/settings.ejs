@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include header.ejs %>
+
+ <style type="text/css"> 
+    .purple-text-custom,.btn-outline-purple{
+        color:#49148b !important;
+    }
+</style>
+
+
+        <div class="container-fluid mt-5 pt-5">
+
+            <!--Section: Basic examples-->
+            <section>
+
+             <div class="row">
+               <div class="col-md-10 col-lg-10 pb-5" style="min-height: 1000px;">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs nav-justified purple darken-4">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">My Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">My Preferences</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">My Rules</a>
+    </li>
+</ul>
+<!-- Tab panels -->
+<div class="tab-content card">
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+        <br>
+<div class="row justify-content-center">
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-3 min_max_ht_dash col-offset-2">
+
+            <!--Card-->
+            <div class="card card-personal">
+
+                <!--Card image-->
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg" alt="Card image cap">
+                <!--Card image-->
+
+                <!--Card content-->
+                <div class="card-body">
+                    <!--Title-->
+                    <a><h4 class="card-title title-one">Christine</h4></a>
+                    <hr>
+                    <div class="text-center">
+                        <button class="btn purple darken-4 btn-md" onclick="window.location.href='dashboard.html'">Change Profile Pic</button>
+
+                    </div>
+                            </div>
+                <!--Card content-->
+
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Grid column-->    
+    <div class="col-md-10 col-lg-5 pb-5 pl-5 ml-2">
+
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="text" id="orangeForm-pass" class="form-control" value="christie">
+                                    <label for="orangeForm-pass">Display Name</label>
+                                </div>                                
+                                <br>
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="email" id="orangeForm-pass" class="form-control" value="christie@gmail.com">
+                                    <label for="orangeForm-pass">Email Id</label>
+                                </div>                                
+                                <br> 
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="number" id="orangeForm-pass" class="form-control" value="789675332">
+                                    <label for="orangeForm-pass">Mobile Number</label>
+                                </div>                                
+                                <br> 
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="text" id="orangeForm-pass" class="form-control" value="13-03-1985">
+                                    <label for="orangeForm-pass">Date of birth</label>
+                                </div>                                
+                                <br>     
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix white-text"></i>
+                                    <input type="text" id="orangeForm-pass" class="form-control" value="Seef">
+                                    <label for="orangeForm-pass">Living in </label>
+                                </div>                                
+                                <br>                                                                                                                        
+                                <div class="text-center pl-4 ">
+                                    <button class="btn purple darken-4 btn-md" onclick="window.location.href='dashboard.html'">Update Profile</button>
+
+                                    <button class="btn grey darken-3 btn-md"  data-toggle="modal" data-target="#change_password">Change Password</button>
+
+                                </div>
+                                  
+    </div>
+    <div class="col-md-10 col-lg-5 pb-5 pl-5 ml-2">
+
+    </div>
+
+</div>
+    </div>
+    <!--/.Panel 1-->
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel2" role="tabpanel">
+        <br>
+       <div class="row justify-content-center">
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-8 min_max_ht_dash col-offset-0">
+
+        <h3 class="mt-3">Notify Me When</h3><br>
+
+        <div>
+            <table class="table table-sm">
+            <!--Table body-->
+            <tbody>
+                <tr class="pb-3">
+                    <td scope="row">
+                        <label for="orangeForm-pass" class="align-middle mt-3">Budget approaches 80%</label>
+                    </td>
+                    <td class="pt-4">
+                        <div class="switch d-inline-block ">
+                            <label>
+                                Off
+                                <input type="checkbox" checked="checked">
+                                <span class="lever"></span>
+                                On
+                            </label>
+                        </div> 
+                    </td>
+                    <td>
+                        <div class="">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1" class="label-table px-5">Email</label>                    
+                        </div> <br> 
+                       <div class="">
+                                <input type="checkbox" id="checkbox2" checked="checked">
+                                <label for="checkbox2" class="label-table mb-3 px-5">SMS</label>                    
+                        </div>                          
+                    </td>
+                </tr>
+                <tr class="pb-3">
+                    <td scope="row">
+                        <label for="orangeForm-pass" class="align-middle mt-3">Net worth fluctuates more than 10% </label>
+                    </td>
+                    <td class="pt-4">
+                        <div class="switch d-inline-block ">
+                            <label>
+                                Off
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                On
+                            </label>
+                        </div> 
+                    </td>
+                    <td>
+                        <div class="">
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1" class="label-table px-5">Email</label>                    
+                        </div> <br> 
+                       <div class="">
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2" class="label-table mb-3 px-5">SMS</label>                    
+                        </div>                          
+                    </td>
+                </tr>               
+                <tr class="pb-3">
+                    <td scope="row">
+                        <label for="orangeForm-pass" class="align-middle mt-3">Abnormal transaction posted </label>
+                    </td>
+                    <td class="pt-4">
+                        <div class="switch d-inline-block ">
+                            <label>
+                                Off
+                                <input type="checkbox" checked="checked">
+                                <span class="lever"></span>
+                                On
+                            </label>
+                        </div> 
+                    </td>
+                    <td>
+                        <div class="">
+                                <input type="checkbox" id="checkbox1" checked="checked">
+                                <label for="checkbox1" class="label-table px-5">Email</label>                    
+                        </div> <br> 
+                       <div class="">
+                                <input type="checkbox" id="checkbox2" checked="checked">
+                                <label for="checkbox2" class="label-table mb-3 px-5">SMS</label>                    
+                        </div>                          
+                    </td>
+                </tr> 
+                <tr class="pb-3">
+                    <td scope="row">
+                        <label for="orangeForm-pass" class="align-middle mt-3">Monthly budget summary </label>
+                    </td>
+                    <td class="pt-4">
+                        <div class="switch d-inline-block ">
+                            <label>
+                                Off
+                                <input type="checkbox" checked="checked">
+                                <span class="lever"></span>
+                                On
+                            </label>
+                        </div> 
+                    </td>
+                    <td>
+                        <div class="">
+                                <input type="checkbox" id="checkbox1" checked="checked">
+                                <label for="checkbox1" class="label-table px-5">Email</label>                    
+                        </div> <br> 
+                       <div class="">
+                                <input type="checkbox" id="checkbox2" checked="checked">
+                                <label for="checkbox2" class="label-table mb-3 px-5">SMS</label>                    
+                        </div>                          
+                    </td>
+                </tr>                
+                <tr class="pb-3">
+                </tr>                
+            </tbody>
+            <!--Table body-->
+            </table>
+        </div>
+            <div class="text-center mx-5 pt-5">
+                <button class="btn purple darken-4 btn-lg" onclick="window.location.href='dashboard.html'">Update Preferences</button>
+
+            </div>        
+    </div>
+</div>
+
+    </div>
+    <!--/.Panel 2-->
+    <!--Panel 3-->
+    <div class="tab-pane fade" id="panel3" role="tabpanel">
+        <div class="container-fluid">
+
+                <!--Top Table UI-->
+             <div class="row">
+               <div class="col-md-12 col-lg-10 pb-5">
+
+                <div class=" mb-5 card card-cascade narrower z-depth-1 mt-5">
+
+                   <!--Card image-->
+                    <div class="view gradient-card-header purple-gradient narrower py-2 mx-5 mb-3 d-flex justify-content-between align-items-center">
+                        <h5 class="white-text mx-3">All Categorisation Rules</h5>
+                        <div>
+                            <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus mt-0"></i></button>
+                          
+                            <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash mt-0"></i></button>
+                        
+                        </div>
+
+                    </div>
+                    <!--/Card image-->
+
+                    <div class="pl-2 pr-2">
+
+                        <div class="table-responsive">
+                            <!--Table-->
+                            <table class="table table-hover mb-0">
+
+                                <!--Table head-->
+                                <thead>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+
+                                        <th class="th-lg"><a href="">Condition<i class="fa fa-sort ml-1"></i></a></th>
+                                        <th class="th-lg"><a href="">Category<i class="fa fa-sort ml-1"></i></a></th>
+
+                                    </tr>
+                                </thead>
+                                <!--Table head-->
+
+                                <!--Table body-->
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox1">
+                                            <label for="checkbox1" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Description contains 'Shop'</td>
+                                        <td>Shopping</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox2">
+                                            <label for="checkbox2" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Description contains 'Pharmacy'</td>
+                                        <td>Medical</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox3">
+                                            <label for="checkbox3" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>If Account is 'Kuwait Finance House'</td>
+                                        <td>Fuel</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Description contains 'Shop'</td>
+                                        <td>Shopping</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Description contains 'Shop'</td>
+                                        <td>Shopping</td>
+                                    </tr>
+                                                                   
+                                </tbody>
+                                <!--Table body-->
+                            </table>
+                            <!--Table-->
+                        </div>
+
+                        <hr class="my-0">
+
+                        <!--Bottom Table UI-->
+                        <div class="d-flex justify-content-between">
+                       <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                            </div>
+
+                           <div class="col-md-12 col-lg-6">
+                            <!--Pagination -->
+                            <nav class="my-4">
+                                <ul class="pagination pagination-circle pg-purple mb-0">
+
+                                    <!--First-->
+                                    <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link">First</a></li>
+
+                                    <!--Arrow left-->
+                                    <li class="page-item disabled">
+                                        <a class="page-link" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    </li>
+
+                                    <!--Numbers-->
+                                    <li class="page-item active"><a class="page-link">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link">3</a></li>
+                                    <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link">4</a></li>
+                                    <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link">5</a></li>
+
+                                    <!--Arrow right-->
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+
+                                    <!--First-->
+                                    <li class="page-item clearfix d-none d-md-block"><a class="page-link">Last</a></li>
+
+                                </ul>
+                            </nav>
+                            <!--/Pagination -->
+                          </div>
+                        </div>
+                        </div>
+                        <!--Bottom Table UI-->
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+    </div>
+    <!--/.Panel 3-->
+</div>
+
+              
+</div>
+</div>
+
+
+            </section>
+            <!--Section: Basic examples-->
+
+        </div>
+
+
+
+  <!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Add Transaction (Manual)</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-plus fa-5x mt-4 purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-8 col-md-8 mx-5 px-5">
+                    <div class="row justify-content-md-center">
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 mt-3">
+                                <select class="mdb-select colorful-select dropdown-purple" multiple searchable="Search here.." id="Accounts1">
+                                    <option value="" disabled selected>Choose Account</option>
+                                    <option value="1">Kuwait Finance House (Savings)</option>
+                                    <option value="2">Kuwait Finance House (Current)</option>
+                                    <option value="3">Kuwait Finance House (Deposit)</option>
+                                    <option value="3">Al Salam Bank (Deposit)</option>
+                                </select>
+                                <button class="btn-save btn btn-purple btn-sm">Pick</button>
+                            </div>
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-4">
+                                <div class="md-form">
+                                    <input placeholder="select date" type="text" id="date-picker-example" class="form-control datepicker">
+                                    <label for="date-picker-example">From</label>
+                                </div>
+                            </div> 
+                    </div><br>
+                    <div class="row justify-content-md-center">
+
+                    
+                            <div class="col-lg-5 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1" >Remarks</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1" >Amount</label>
+                                </div>
+                            </div>                            
+                    </div>
+                    </div>
+
+                </div>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Add Transaction<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">Clear</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+
+ <!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Delete</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row align-middle">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-trash fa-5x purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-8 col-md-8 px-5 mt-4">
+                    <div class="row justify-content-md-center">
+                            <h4>Remove selected categorisation rules (3)?</h4><br>
+
+                    </div><br>
+                   
+                    </div>
+
+                </div>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Yes, Proceed<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">No, Cancel</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+
+
+
+<!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="change_password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Change Password</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-eye fa-5x mx-5 px-5 purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-7 col-md-8 px-5 mt-5">
+
+                    <div class="row justify-content-md-center">
+                            <div class="col-lg-7 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="Password" id="form1" class="form-control">
+                                    <label for="form1" >Old Password</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="Password" id="form1" class="form-control">
+                                    <label for="form1" >New Password</label>
+                                </div>
+                            </div>                            
+                            <div class="col-lg-7 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="Password" id="form1" class="form-control">
+                                    <label for="form1" >Re-enter New Password</label>
+                                </div>
+                            </div>                              
+                    </div><br>
+                    </div>
+                    <div class="col-lg-3 col-md-3"><br>
+                        <ul class="list-group text-left">
+                          <li class="list-group-item grey white-text">Password should contain</li>
+                          <li class="list-group-item">Uppercase alphabet</li>
+                          <li class="list-group-item">Atleast one number</li>
+                          <li class="list-group-item">Atleast one special character</li>
+                          <li class="list-group-item">Old Password should be valid</li>
+                          <li class="list-group-item">New and Re-entered Password should match</li>
+                        </ul>
+                    </div>                    
+
+                </div><br>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Yes, Change<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">No, Cancel</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+
+
+
+        <!--Footer-->
+<footer class="page-footer font-small stylish-color-dark mt-4">
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">      
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> Nurture Software Solutions</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+    </body>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>    
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    
+    <script>
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+            // Data Picker Initialization
+            $('.datepicker').pickadate();            
+        });
+
+        var container = document.querySelector('.custom-scrollbar');
+        Ps.initialize(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+
+    </script>
+
+    </html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include header.ejs %>
+
+    <main>
+        <div class="container-fluid">
+
+            <!--Section: Basic examples-->
+            <section>
+
+
+<div class="row mt-4">
+    <div class="col-md-4 col-lg-4 pb-5">
+
+        <!-- Card -->
+        <div class="card">
+
+            <!-- Card image -->
+            <div class="view view gradient-card-header purple darken-4" style="height: 100px">
+                <h4 class="card-title white-text mt-4 pt-2 ml-4">Your Current Budget - Expenses</h4>
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+            <!-- Button -->
+            <a class="btn-floating btn-action ml-auto mr-4 purple darken-1"><i class="fa fa-pencil-alt pl-1"></i></a>
+
+            <!-- Card content -->
+            <div class="card-body">
+
+                <div class="list-group mt-2">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Auto & Fuel</h5>
+                            <small>14%</small>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar purple" role="progressbar" style="width: 14%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="grey-text">Spent BHD 14 of BHD 100</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Entertainment</h5>
+                            <small>53%</small>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar purple" role="progressbar" style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="grey-text">Spent BHD 159 of BHD 300</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Groceries</h5>
+                            <small>76%</small>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar purple" role="progressbar" style="width: 76%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="grey-text">Spent BHD 266 of BHD 350</small>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-center mt-4">
+                            <h5 class="mb-1">Total Budgeted</h5>
+                            <small class="grey-text">BHD 750</small><br><br>
+                            <h5 class="mb-1">Consumed</h5>
+                            <small class="grey-text">BHD 439</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <span class="min-chart my-4 " id="chart-sales" data-percent="58.5"><span class="percent"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card footer -->
+            <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
+                <ul class="list-unstyled list-inline font-small">
+                    <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>This budget will be reset on 1st of every month</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Card -->
+
+    </div>
+
+
+<div class="col-md-4 col-lg-4 pb-5">
+
+        <!-- Card -->
+        <div class="card">
+
+            <!-- Card image -->
+            <div class="view view gradient-card-header purple darken-4" style="height: 100px">
+                <h4 class="card-title white-text mt-4 pt-2 ml-4">Your Current Budget - Income</h4>
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+            <!-- Button -->
+            <a class="btn-floating btn-action ml-auto mr-4 purple darken-1"><i class="fa fa-pencil-alt pl-1"></i></a>
+
+            <!-- Card content -->
+            <div class="card-body">
+
+                <div class="list-group mt-2">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Salary</h5>
+                            <small>100%</small>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar purple" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="grey-text">Received BHD 1200 of BHD 1200</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Dividend</h5>
+                            <small>0%</small>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar purple" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="grey-text">Received BHD 0 of BHD 100</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Interest on deposit</h5>
+                            <small>100%</small>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar purple" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="grey-text">Received BHD 50 of BHD 50</small>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-center mt-4">
+                            <h5 class="mb-1">Total Budgeted</h5>
+                            <small class="grey-text">BHD 1350</small><br><br>
+                            <h5 class="mb-1">Credit Received</h5>
+                            <small class="grey-text">BHD 1250</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <span class="min-chart my-4 " id="chart-sales" data-percent="93"><span class="percent"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card footer -->
+            <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
+                <ul class="list-unstyled list-inline font-small">
+                    <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>This budget will be reset on 1st of every month</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Card -->
+
+    </div>
+
+
+
+</div>
+
+            </section>
+            <!--Section: Basic examples-->
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+        <!--Footer-->
+<footer class="page-footer font-small stylish-color-dark mt-4">
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> Nurture Software Solutions</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+    </body>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script>
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+            // Data Picker Initialization
+            $('.datepicker').pickadate();
+
+    $(function () {
+        $('.min-chart#chart-sales').easyPieChart({
+            barColor: "#4caf50",
+            onStep: function (from, to, percent) {
+                $(this.el).find('.percent').text(Math.round(percent));
+            }
+        });
+    });
+
+
+        });
+
+        var container = document.querySelector('.custom-scrollbar');
+        Ps.initialize(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+
+    </script>
+
+    </html>

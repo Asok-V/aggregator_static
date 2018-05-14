@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include header.ejs %>
+
+<style type="text/css"> 
+    .purple-text-custom,.btn-outline-purple{
+        color:#49148b !important;
+    }
+</style>
+
+    <main>
+        <div class="container-fluid">
+
+            <!--Section: Basic examples-->
+            <section>
+
+
+                <!--Top Table UI-->
+                <div class="card p-2 mb-5 d-none">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+
+
+                    </div>
+                    <!--Grid row-->
+
+                </div>
+                <!--Top Table UI-->
+             <div class="row">
+               <div class="col-md-8 col-lg-8">
+
+                <div class="card card-cascade narrower z-depth-1 mt-5">
+
+                    <!--Card image-->
+                    <div class="view gradient-card-header purple-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
+
+
+
+                        <h5 class="white-text mx-3">All Transactions</h5>
+
+                        <div>
+                            <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus mt-0"></i></button>
+                            <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#editModal"><i class="fa fa-edit mt-0"></i></button>
+                            <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash mt-0"></i></button>
+                            <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"  data-toggle="modal" data-target="#downloadModal"><i class="fa fa-download mt-0"></i></button>
+                        </div>
+
+                    </div>
+                    <!--/Card image-->
+
+                    <div class="pl-2 pr-2">
+
+                        <div class="table-responsive">
+                            <!--Table-->
+                            <table class="table table-hover mb-0">
+
+                                <!--Table head-->
+                                <thead>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+
+                                        <th class="th-lg"><a href="">Account<i class="fa fa-sort ml-1"></i></a></th>
+                                        <th class="th-lg"><a href="">Date<i class="fa fa-sort ml-1"></i></a></th>
+                                        <th class="th-lg"><a href="">Description<i class="fa fa-sort ml-1"></i></a></th>
+                                        <th class="th-lg"><a href="">Category<i class="fa fa-sort ml-1"></i></a></th>
+                                        <th class="th-lg"><a href="">Amount<i class="fa fa-sort ml-1"></i></a></th>
+
+                                    </tr>
+                                </thead>
+                                <!--Table head-->
+
+                                <!--Table body-->
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox1">
+                                            <label for="checkbox1" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>31-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Shopping</td>
+                                        <td>15.3 BHD</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox2">
+                                            <label for="checkbox2" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>19-03-2018</td>
+                                        <td  contenteditable='true'>ATM Withdrawal</td>
+                                        <td  contenteditable='true'>Food</td>
+                                        <td>10.7 BHD</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox3">
+                                            <label for="checkbox3" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>10-03-2018</td>
+                                        <td  contenteditable='true'>CREDIT CARD</td>
+                                        <td  contenteditable='true'>Movie</td>
+                                        <td>5.1 BHD</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>05-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Travel</td>
+                                        <td>17.5 BHD</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>05-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Travel</td>
+                                        <td>17.5 BHD</td>
+                                    </tr>
+                                                                        <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>05-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Travel</td>
+                                        <td>17.5 BHD</td>
+                                    </tr>
+                                                                        <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>05-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Travel</td>
+                                        <td>17.5 BHD</td>
+                                    </tr>
+                                                                        <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>05-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Travel</td>
+                                        <td>17.5 BHD</td>
+                                    </tr>
+                                                                        <tr>
+                                        <th scope="row">
+                                            <input type="checkbox" id="checkbox4">
+                                            <label for="checkbox4" class="label-table mr-5 mr-5"></label>
+                                        </th>
+                                        <td>Savings</td>
+                                        <td>05-03-2018</td>
+                                        <td  contenteditable='true'>Unified Payments</td>
+                                        <td  contenteditable='true'>Travel</td>
+                                        <td>17.5 BHD</td>
+                                    </tr>
+                                </tbody>
+                                <!--Table body-->
+                            </table>
+                            <!--Table-->
+                        </div>
+
+                        <hr class="my-0">
+
+                        <!--Bottom Table UI-->
+                        <div class="d-flex justify-content-between">
+                       <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                            </div>
+
+                           <div class="col-md-12 col-lg-6">
+                            <!--Pagination -->
+                            <nav class="my-4">
+                                <ul class="pagination pagination-circle pg-purple mb-0">
+
+                                    <!--First-->
+                                    <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link">First</a></li>
+
+                                    <!--Arrow left-->
+                                    <li class="page-item disabled">
+                                        <a class="page-link" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    </li>
+
+                                    <!--Numbers-->
+                                    <li class="page-item active"><a class="page-link">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link">3</a></li>
+                                    <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link">4</a></li>
+                                    <li class="page-item clearfix d-none d-md-inline-block"><a class="page-link">5</a></li>
+
+                                    <!--Arrow right-->
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+
+                                    <!--First-->
+                                    <li class="page-item clearfix d-none d-md-block"><a class="page-link">Last</a></li>
+
+                                </ul>
+                            </nav>
+                            <!--/Pagination -->
+                          </div>
+                        </div>
+                        </div>
+                        <!--Bottom Table UI-->
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+ <div class="col-md-4 mt-5">
+    <div class="card">
+        <h6 class="card-header purple darken-4 white-text">Analyse Your Transactions</h6>
+        <div class="card-body" style="padding: 0px;">
+
+            <!--Accordion wrapper-->
+            <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingOne">
+                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h6 class="mb-0 mt-2 black-text">
+                                Filter by
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </h6>
+                        </a>
+                    </div>
+
+
+                    <!-- Card body -->
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx">
+                        <div class="card-body">
+
+                            <!--Grid column-->
+                            <div class="col-lg-10 col-md-10">
+                                <select class="mdb-select colorful-select dropdown-purple" multiple searchable="Search here..">
+                                    <option value="" disabled selected>Choose Accounts</option>
+                                    <option value="1">Kuwait Finance House (Savings)</option>
+                                    <option value="2">Kuwait Finance House (Current)</option>
+                                    <option value="3">Kuwait Finance House (Deposit)</option>
+                                    <option value="3">Al Salam Bank (Deposit)</option>
+                                </select>
+                                <label>Accounts</label>
+                                <button class="btn-save btn btn-purple btn-sm">Pick</button>
+                            </div>
+                            <!--Grid column-->
+                            <br>
+                            <!--Grid column-->
+                            <div class="col-lg-10 col-md-10">
+                                <select class="mdb-select colorful-select dropdown-purple" multiple searchable="Search here..">
+                                    <option value="" disabled selected>Choose Category</option>
+                                    <option value="1">Movie</option>
+                                    <option value="2">Fuel</option>
+                                    <option value="3">Dining</option>
+                                    <option value="3">Education</option>
+                                </select>
+                                <label>Category</label>
+                                <button class="btn-save btn btn-purple btn-sm">Pick</button>
+                            </div>
+                            <!--Grid column-->
+                            <br>
+                            <div class="col-lg-10 col-md-10">
+                                <div class="md-form">
+                                    <input placeholder="select date" type="text" id="date-picker-example" class="form-control datepicker">
+                                    <label for="date-picker-example">From</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-lg-10 col-md-10">
+                                <div class="md-form">
+                                    <input placeholder="select date" type="text" id="date-picker-example" class="form-control datepicker">
+                                    <label for="date-picker-example">To</label>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="col-lg-10 col-md-10">
+                                <label for="date-picker-example1">Transaction Amount</label>
+                                <div class="d-flex justify-content-center my-4">
+                                    <span class="font-weight-bold  mr-2">BHD 1</span>
+                                        <form class="range-field w-75">
+                                            <input class="no-border purple-text-custom" type="range" min="1" max="1000000" />
+                                        </form>
+                                    <span class="font-weight-bold  ml-2">BHD 1000000</span>
+                                </div>
+                            </div>
+
+                        <div class="col-lg-10 col-md-10">
+
+                            <form class="form-inline md-form mt-2 ml-2">
+                                <input class="form-control my-0" type="text" placeholder="Word Search">
+                            </form>
+
+                        </div>
+                        <br>
+
+                        <div class="col-lg-10 col-md-10 text-center">
+
+        <button type="button" class="btn btn-outline-purple waves-effect px-3"><i class="fa fa-save fa-3x" aria-hidden="true"></i></button>
+
+        <button type="button" class="btn btn-outline-pink waves-effect px-3"><i class="fa fa-search fa-3x" aria-hidden="true"></i></button>
+                    </div>
+
+                        </div>
+                    </div>
+                    <hr class="my-1 mx-3">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <h5 class="mb-0 black-text">
+                                Saved searches
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
+                        <div class="card-body">
+
+                        <div class="chip pink lighten-4">
+                            Credit Card
+                            <i class="close fa fa-times"></i>
+                        </div>
+
+                        <div class="chip pink lighten-4">
+                            Loan lookup
+                            <i class="close fa fa-times"></i>
+                        </div>
+
+                        </div>
+                    </div>
+                    <hr class="my-1 mx-3">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <h5 class="mb-0 black-text">
+                                Or You can try one of these
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx">
+                        <div class="card-body">
+
+                            <div class="chip chip-lg purple darken-4 white-text">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person">Spendings on Travel
+                            </div>
+
+                            <div class="chip chip-lg purple darken-4 white-text">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person">All Dinings
+                            </div>
+                            <div class="chip chip-lg purple darken-4 white-text">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person">My Income
+                            </div>
+                            <div class="chip chip-lg purple darken-4 white-text">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person"> Fuel Expenses
+                            </div>
+                            <div class="chip chip-lg purple darken-4 white-text">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(21).jpg" alt="Contact Person">Charity
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+<br>
+
+
+
+<!-- Card Narrower -->
+<div class="card card-cascade narrower">
+
+  <!-- Card image -->
+  <div class="view overlay">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Label -->
+    <h4 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> What we have found</h4><br>
+    <!-- Title -->
+    <!-- Text -->
+        <p><i class="fa fa-quote-left fa-xs"></i>  Monthly, you do 14 transactions on an average <i class="fa fa-quote-right fa-xs"></i></p>
+        <hr>
+        <p><i class="fa fa-quote-left fa-xs"></i>  72% of your transactions are online payments  <i class="fa fa-quote-right fa-xs"></i></p>
+        <hr>
+        <p><i class="fa fa-quote-left fa-xs"></i>  There are 2 recurring monthly payments   <i class="fa fa-quote-right fa-xs"></i></p>
+        <hr>
+            <div class="text-center">
+    <a class="btn btn-unique text-center">More</a>
+            </div>
+
+  </div>
+
+</div>
+<!-- Card Narrower -->
+
+
+
+
+
+
+            </section>
+            <!--Section: Basic examples-->
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+        <!--Footer-->
+<footer class="page-footer font-small stylish-color-dark mt-4">
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> Nurture Software Solutions</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+
+  
+  <!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Add Transaction (Manual)</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-plus fa-5x mt-4 purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-8 col-md-8 mx-5 px-5">
+                    <div class="row justify-content-md-center">
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 mt-3">
+                                <select class="mdb-select colorful-select dropdown-purple" multiple searchable="Search here.." id="Accounts1">
+                                    <option value="" disabled selected>Choose Account</option>
+                                    <option value="1">Kuwait Finance House (Savings)</option>
+                                    <option value="2">Kuwait Finance House (Current)</option>
+                                    <option value="3">Kuwait Finance House (Deposit)</option>
+                                    <option value="3">Al Salam Bank (Deposit)</option>
+                                </select>
+                                <button class="btn-save btn btn-purple btn-sm">Pick</button>
+                            </div>
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-4">
+                                <div class="md-form">
+                                    <input placeholder="select date" type="text" id="date-picker-example" class="form-control datepicker">
+                                    <label for="date-picker-example">From</label>
+                                </div>
+                            </div> 
+                    </div><br>
+                    <div class="row justify-content-md-center">
+
+                    
+                            <div class="col-lg-5 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1" >Remarks</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4">
+                                <!-- Material input -->
+                                <div class="md-form">
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1" >Amount</label>
+                                </div>
+                            </div>                            
+                    </div>
+                    </div>
+
+                </div>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Add Transaction<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">Clear</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+  
+                                          
+ 
+  <!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Download</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-download fa-5x mt-4 purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-8 col-md-8 px-5 mt-5">
+                    <div class="row justify-content-md-center">
+                            <h4>Download as</h4><br>
+                            <!--Grid column-->
+                            <div class="col-lg-8 col-md-8">
+                                
+                                <form class="form-inline">
+
+                                    <div class="form-check px-4">
+                                        <input class="form-check-input" name="group20" type="radio" id="radio120" checked="checked">
+                                        <label class="form-check-label" for="radio120"><i class="fa fa-file-pdf fa-3x pink-text"></i></label>
+                                    </div>
+
+                                    <div class="form-check px-4">
+                                        <input class="form-check-input" name="group20" type="radio" id="radio121">
+                                        <label class="form-check-label" for="radio121"><i class="fa fa-file-word fa-3x pink-text"></i></label>
+                                    </div>
+
+                                    <div class="form-check px-4">
+                                        <input class="form-check-input" name="group20" type="radio" id="radio122">
+                                        <label class="form-check-label" for="radio122"><i class="fa fa-file-excel fa-3x pink-text"></i></label>
+                                    </div>
+
+                                </form>
+                
+                            </div> 
+                    </div><br>
+                   
+                    </div>
+
+                </div>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Yes, Download<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">No, Cancel</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+  
+ <!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Delete</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row align-middle">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-trash fa-5x purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-8 col-md-8 px-5 mt-4">
+                    <div class="row justify-content-md-center">
+                            <h4>Remove selected transactions (6) from Insights and Reporting?</h4><br>
+
+                    </div><br>
+                   
+                    </div>
+
+                </div>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Yes, Proceed<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">No, Cancel</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+
+<!-- Central Modal Medium Info -->
+ <div class="modal fade bottom" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+data-backdrop="false">
+<div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header d-none">
+              <h2 class="heading lead">Edit Transactions</h2>
+  
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+          </div>
+  
+          <!--Body-->
+          <div class="modal-body">
+              <div class="text-center"><br>
+                <div class="row">
+                    <div class="col-lg-2 col-md-3"><br>
+                    <i class="fa fa-edit fa-5x mt-1 purple-text-custom animated pulse infinite"></i>
+                    </div>
+                    <div class="col-lg-8 col-md-8 px-5 mt-5">
+                    <div class="row justify-content-md-center">
+                            <h4 class="mt-2">Set category for selected transactions (6) as.. </h4><br>
+
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 pl-5">
+                                <select class="mdb-select colorful-select dropdown-purple" searchable="Search here.." id="Accounts1">
+                                    <option value="" disabled selected>Choose Category</option>
+                                    <option value="1">Automobile</option>
+                                    <option value="2">Entertainment</option>
+                                    <option value="3">Education</option>
+                                    <option value="3">Salary</option>
+                                </select>
+                                <button class="btn-save btn btn-purple btn-sm">Pick</button>
+                            </div>
+                            <!--Grid column-->
+
+
+                    </div><br>
+                   
+                    </div>
+
+                </div>
+              </div>
+          </div>
+  
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+              <a type="button" class="btn purple darken-4">Yes, Set<i class="fa fa-diamond ml-1"></i></a>
+              <a type="button" class="btn btn-outline-purple darken-4 waves-effect" data-dismiss="modal">No, Cancel</a>
+          </div>
+      </div>
+      <!--/.Content-->
+  </div>
+  </div>
+  <!-- Central Modal Medium Info-->
+
+    </body>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script>
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+            // Data Picker Initialization
+            $('.datepicker').pickadate();
+        });
+
+        var container = document.querySelector('.custom-scrollbar');
+        Ps.initialize(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+
+    </script>
+
+    </html>

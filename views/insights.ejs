@@ -1,0 +1,183 @@
+    <!DOCTYPE html>
+<html lang="en">
+<%- include header.ejs %>
+
+
+
+
+        <div class="container-fluid mt-5 pt-5">
+
+            <!--Section: Basic examples-->
+            <section>
+
+             <div class="row">
+               <div class="col-md-10 col-lg-10 pb-5 pt-3" style="min-height: 1000px;">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs nav-justified purple darken-4">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Net Worth Analysis</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" onclick="expensefunction()" href="#panel2" role="tab">Expense Analysis</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" onclick="cashfunction()" href="#panel3" role="tab">Cash Flow</a>
+    </li>
+</ul>
+<!-- Tab panels -->
+<div class="tab-content card">
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+        <div id="networth" class="ml-5 pl-5 mt-5" style="width:350px;height:450px;"></div>
+	
+    </div>
+    <!--/.Panel 1-->
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel2" role="tabpanel">
+        <div id="expense" class="ml-5 pl-5 mt-5" style="width:350px;height:450px;"></div>
+
+        <h6 class="grey-text text-center">
+        **Top expense for this month is <br>
+        'ATM/Cash Withdrawals' for an amount of BHD 523.500
+        </h6>
+
+	</div>
+    <!--/.Panel 2-->
+    <!--Panel 3-->
+    <div class="tab-pane fade" id="panel3" role="tabpanel">
+	
+
+
+<div id="cashinflow" class="ml-5 pl-5 mt-5" style="width:350px;height:450px;"></div>
+<div class="row justify-content-center">
+  <div class="col-lg-8 col-md-8">
+	 <div class="content table-responsive table-full-width">
+
+                                <table class="table table-hover " id="mytable">
+                                    <thead>
+                                        <th class="col-xs-1">MONTH</th>
+                                        <th class="col-xs-1">CASH INFLOW</th>
+                                        <th class="col-xs-1">CASH OUTFLOW</th>
+                                       
+                                    </thead>
+                                    <tbody>
+
+                          
+
+                                        <tr>
+                                            <td>Mar 2018</td>
+											<td>BHD 450.000</td>
+                                            <td>BHD 600.000</td>
+                                       
+                                        </tr>
+										 <tr>
+                                            <td>Feb 2018</td>
+											<td>BHD 423.000</td>
+                                            <td>BHD 676.000</td>
+                                       
+                                        </tr>
+										 <tr>
+                                            <td>Jan 2018</td>
+											<td>BHD 368.000</td>
+                                            <td>BHD 723.000</td>
+                                       
+                                        </tr>
+										 <tr>
+                                            <td>Dec 2017</td>
+											<td>BHD 178.000</td>
+                                            <td>BHD 543.000</td>
+                                       
+                                        </tr>
+										 <tr>
+                                            <td>Nov 2017</td>
+											<td>BHD 232.000</td>
+                                            <td>BHD 334.000</td>
+                                       
+                                        </tr>
+										 <tr>
+                                            <td>Oct 2017</td>
+											<td>BHD 345.000</td>
+                                            <td>BHD 265.000</td>
+                                       
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <br><br>
+                            <h6 class="grey-text text-left">
+				**Average Monthly Cash Inflow is BHD 332.666 <br><br>
+				**Average Monthly Cash Outflow is BHD 523.500
+        </h6>
+		 <!--<div id="cashinflow" style=""></div>-->
+		</div>
+    </div>
+    </div>
+    <!--/.Panel 3-->
+</div>
+
+
+</div>
+</div>
+
+
+            </section>
+            <!--Section: Basic examples-->
+
+        </div>
+
+
+
+
+
+
+
+
+        <!--Footer-->
+<footer class="page-footer font-small stylish-color-dark mt-4">
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> Nurture Software Solutions</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+
+    </body>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>        
+    <script type="text/javascript" src="../js/popper.min.js"></script>    
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+    <script type="text/javascript" src="../js/app/insights.js"></script>
+    
+    <script>
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+            // Data Picker Initialization
+            $('.datepicker').pickadate();
+        });
+
+        var container = document.querySelector('.custom-scrollbar');
+        Ps.initialize(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+
+    </script>
+
+    </html>

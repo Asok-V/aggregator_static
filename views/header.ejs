@@ -1,0 +1,101 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aggregator</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../css/mdb.min.css">
+      <link rel="stylesheet" href="../css/localcss.css">
+
+    <!-- Your custom styles (optional) -->
+
+</head>
+
+<body class="fixed-sn white-skin">
+
+    <!--Main Navigation-->
+    <header>
+
+
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left align-middle" style="max-height: 100px !important;">
+                <img src="../img/sig_logo.png" class="float-left align-middle d-inline-block pl-5" alt="placeholder" style="height: 50px;">
+                <img src="../img/sig_name.png" class="float-left align-middle d-inline-block pl-3 mt-2" alt="placeholder" style="height: 35px;">
+
+            </div>
+
+            <!--Navbar links-->
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" onclick="window.location.href='dashboard.html'">
+                        <i class="fa fa-home fa-2x grey-text"></i>
+                    </a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown notifications-nav">
+                    <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-bell fa-2x grey-text"></i><span class="counter">3</span> 
+                    </a>
+                    <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-money mr-2" aria-hidden="true"></i>
+                            <span>New Budget Created</span>
+                            <span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 13 min</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-money mr-2" aria-hidden="true"></i>
+                            <span>Abnormal transaction posted</span>
+                            <span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 33 min</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-line-chart mr-2" aria-hidden="true"></i>
+                            <span>Change in networth</span>
+                            <span class="float-right"><i class="fa fa-clock-o" aria-hidden="true"></i> 53 min</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user fa-2x grey-text darken-4"></i> <span class="clearfix d-none d-sm-inline-block"></span></a>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" onclick="window.location.href='settings.html'">Settings</a>
+                        <a class="dropdown-item" onclick="window.location.href='login.html'">Sign Out</a>
+                    </div>
+                </li>
+
+            </ul>
+            <!--/Navbar links-->
+        </nav>
+        <!-- /.Navbar -->
+        <!-- Fixed button -->
+        <div class="fixed-action-btn clearfix d-none d-xl-block" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-md purple darken-4">
+                <i class="fa fa-ellipsis-v"></i>
+            </a>
+
+            <ul class="list-unstyled">
+                <li><a class="btn-floating blue" data-toggle="tooltip" data-placement="left" title="Insights" onclick="window.location.href='insights.html'"><i class="fa fa-chart-line"></i></a></li>
+                <li><a class="btn-floating green" data-toggle="tooltip" data-placement="left" title="Budgets" onclick="window.location.href='budget.html'"><i class="fa fa-piggy-bank"></i></a></li>
+                <li><a class="btn-floating yellow darken-1" data-toggle="tooltip" data-placement="left" title="Transactions" onclick="window.location.href='transactions.html'"><i class="fa fa-exchange-alt"></i></a></li>
+                <li><a class="btn-floating red" data-toggle="tooltip" data-placement="left" title="Accounts" onclick="window.location.href='accounts.html'"><i class="fa fa-suitcase"></i></a></li>
+
+            </ul>
+        </div>
+        <!-- Fixed button -->
+
+
+    </header>
+    <!--Main Navigation-->
