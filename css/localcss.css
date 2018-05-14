@@ -1,0 +1,427 @@
+
+input[type=range].no-border {
+  border: none; }
+
+.counter{
+    background-color: #f61762;
+    margin-top: -5px;
+}
+.fixed-sn .double-nav, .fixed-sn footer, .fixed-sn main {
+    padding-left: 0px !important;
+}
+
+.switch.round label .lever {
+            width: 54px;
+            height: 34px;
+            border-radius: 10em;
+        }
+
+        .switch.round label .lever:after {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            left: 4px;
+            top: 4px;
+        }
+
+        .switch.square label .lever {
+            width: 54px;
+            height: 34px;
+            border-radius: 0px;
+        }
+
+        .switch.square label .lever:after {
+            width: 26px;
+            height: 26px;
+            border-radius: 0px;
+            left: 4px;
+            top: 4px;
+        }
+
+
+
+.bg {
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (min-width:320px)
+{
+  .chartresponsive1
+  {
+    overflow: auto;
+    height: 255px;
+    margin-left: 0px!important;
+    padding-left: 0px!important;
+  }
+  .chartresponsive2
+  {
+    overflow: auto;
+    height: 260px;
+    margin-left: 0px!important;
+    padding-left: 0px!important;
+  }
+  .chartresponsive3{
+    overflow: auto;
+    height: 308px;
+    margin-left: 0px!important;
+    padding-left: 0px!important;
+  }
+
+  .badgeworth
+  {
+    margin-left: 5px!important;
+  }
+  .badgeworth1
+  {
+    margin-left: -38px!important;
+  }
+  .badgeworth2
+  {
+    margin-left: -11px!important;
+  }
+  .tablink
+  {
+    margin-left: -17px!important;
+  }
+  .tablink1
+  {
+    margin-left: -25px!important;
+  }
+  .tablink2
+  {
+    margin-left: -41px!important;
+  }
+.logoimage
+{
+  height: 33px!important;
+  margin-left: -37px!important;
+}
+.logoimage1
+{
+  height: 26px!important;
+  margin-left: -13px!important;
+}
+ .banks
+ {
+   font-size: 14px !important;
+ }
+ .Accounts
+ {
+    font-size: 18px !important;
+    margin-bottom: -2px!important;
+    margin-top: -24px!important;
+ }
+}
+@media (min-width:375px)
+{
+  .badgeworth
+  {
+    margin-left: -7px!important;
+  }
+  .badgeworth1
+  {
+    margin-left: -95px!important;
+  }
+  .badgeworth2
+  {
+    margin-left: -22px!important;
+  }
+  .tablink
+  {
+    margin-left: 12px!important;
+  }
+  .tablink1
+  {
+    margin-left: 2px!important;
+  }
+  .tablink2
+  {
+    margin-left: -15px!important;
+  }
+  .logoimage
+  {
+    height: 38px!important;
+    margin-left: -33px!important;
+  }
+  .logoimage1
+  {
+    height: 30px!important;
+    margin-left: -13px!important;
+  }
+ .banks
+ {
+   font-size: 15px !important;
+ }
+ .Accounts
+ {
+    font-size: 20px !important;
+ }
+}
+@media (min-width:425px)
+{
+  .badgeworth
+  {
+    margin-left: 3px!important;
+  }
+  .badgeworth1
+  {
+    margin-left: -147px!important;
+  }
+  .badgeworth2
+  {
+    margin-left: -75px!important;
+  }
+  .tablink
+  {
+    margin-left: -47px!important;
+  }
+  .tablink1
+  {
+    margin-left: -25px!important;
+  }
+  .tablink2
+  {
+    margin-left: 3px!important;
+  }
+  .logoimage
+  {
+    height: 38px!important;
+    margin-left: -33px!important;
+  }
+  .logoimage1
+  {
+    height: 30px!important;
+    margin-left: -13px!important;
+  }
+ .banks
+ {
+   font-size: 16px !important;
+ }
+ .Accounts
+ {
+    font-size: 22px !important;
+    margin-top: -24px!important;
+ }
+}
+@media (min-width:576px)
+{
+ .banks
+ {
+   font-size: 10px !important;
+ }
+ .Accounts
+ {
+    font-size: 22px !important;
+ }
+}
+@media (min-width:768px)
+{
+  .badgeworth
+  {
+    margin-left: 3px!important;
+  }
+  .badgeworth1
+  {
+    margin-left: -147px!important;
+  }
+  .badgeworth2
+  {
+    margin-left: -75px!important;
+  }
+  .tablink
+  {
+    margin-left: -96px!important;
+  }
+  .tablink1
+  {
+    margin-left: -51px!important;
+  }
+  .tablink2
+  {
+    margin-left: -58px!important;
+  }
+  .logoimage
+  {
+    height: 45px!important;
+    margin-left: -21px!important;
+  }
+  .logoimage1
+  {
+    height: 32px!important;
+    margin-left: -9px!important;
+  }
+  .min_max_ht_dash
+    {
+      min-height: 480px !important;
+      max-height: 750px !important;
+    }
+    .banks
+    {
+      font-size: 17px !important;
+    }
+    .Accounts
+    {
+       font-size: 24px !important;
+       margin-top: -6px!important;
+    }
+}
+
+@media (min-width:992px)
+{
+  .badgeworth
+  {
+    margin-left: 3px!important;
+  }
+  .badgeworth1
+  {
+    margin-left: -1px!important;
+  }
+  .badgeworth2
+  {
+    margin-left: -1px!important;
+  }
+  .tablink
+  {
+    margin-left: -96px!important;
+  }
+  .tablink1
+  {
+    margin-left: -45px!important;
+  }
+  .tablink2
+  {
+    margin-left: -49px!important;
+  }
+  .logoimage
+  {
+    height: 48px!important;
+    margin-left: -23px!important;
+  }
+  .logoimage1
+  {
+    height: 35px!important;
+    margin-left: -7px!important;
+  }
+  .min_max_ht_dash
+    {
+      min-height: 497px !important;
+      max-height: 750px !important;
+    }
+}
+@media (min-width:1200px)
+{
+  .chartresponsive1
+  {
+    overflow: auto;
+    height: 255px;
+    margin-left: 69px!important;
+    padding-left: 0px!important;
+  }
+  .chartresponsive2
+  {
+    overflow: auto;
+    height: 260px;
+    margin-left: 42px!important;
+    padding-left: 0px!important;
+  }
+  .chartresponsive3{
+    overflow: auto;
+    height: 308px;
+    margin-left: 71px!important;
+    padding-left: 0px!important;
+  }
+
+  .tablink
+  {
+    margin-left: -9px!important;
+  }
+  .tablink1
+  {
+    margin-left: 2px!important;
+  }
+  .tablink2
+  {
+    margin-left: -18px!important;
+  }
+  .netchart
+  {
+    margin-left: 85px!important;
+  }
+  .logoimage
+  {
+    height: 50px!important;
+    margin-left: -21px!important;
+  }
+  .logoimage1
+  {
+    height: 38px!important;
+    margin-left: -2px!important;
+  }
+  .min_max_ht_dash
+    {
+      min-height: 630px !important;
+      max-height: 630px !important;
+    }
+}
+@media (min-width:2560px)
+{
+  .chartresponsive1
+  {
+    overflow: auto;
+    height: 255px;
+    margin-left: 356px!important;
+    padding-left: 0px!important;
+  }
+  .chartresponsive2
+  {
+    overflow: auto;
+    height: 260px;
+    margin-left: 343px!important;
+    padding-left: 0px!important;
+  }
+  .chartresponsive3{
+    overflow: auto;
+    height: 308px;
+    margin-left: 361px!important;
+    padding-left: 0px!important;
+  }
+
+  .tablink
+  {
+    margin-left: 163px!important;
+  }
+  .tablink1
+  {
+    margin-left: 138px!important;
+  }
+  .tablink2
+  {
+    margin-left: 134px!important;
+  }
+  .netchart
+  {
+    margin-left: 454px!important;
+  }
+  .logoimage
+  {
+    height: 55px!important;
+    margin-left: -17px!important;
+  }
+  .logoimage1
+  {
+    height: 44px!important;
+    margin-left: 5px!important;
+  }
+  .min_max_ht_dash
+    {
+      min-height: 750px !important;
+      max-height: 750px !important;
+    }
+}

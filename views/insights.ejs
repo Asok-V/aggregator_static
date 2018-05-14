@@ -4,8 +4,8 @@
 
 
 
-
-        <div class="container-fluid mt-5 pt-5">
+    <main>
+        <div class="container-fluid mt-2">
 
             <!--Section: Basic examples-->
             <section>
@@ -29,13 +29,13 @@
 <div class="tab-content card">
     <!--Panel 1-->
     <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
-        <div id="networth" class="ml-5 pl-5 mt-5" style="width:350px;height:450px;"></div>
-	
+        <div id="networth" class="netchart mt-5" style="height:450px;overflow:auto;"></div>
+
     </div>
     <!--/.Panel 1-->
     <!--Panel 2-->
     <div class="tab-pane fade" id="panel2" role="tabpanel">
-        <div id="expense" class="ml-5 pl-5 mt-5" style="width:350px;height:450px;"></div>
+        <div id="expense" class="netchart mt-5" style="overflow:auto;height:450px;"></div>
 
         <h6 class="grey-text text-center">
         **Top expense for this month is <br>
@@ -46,10 +46,10 @@
     <!--/.Panel 2-->
     <!--Panel 3-->
     <div class="tab-pane fade" id="panel3" role="tabpanel">
-	
 
 
-<div id="cashinflow" class="ml-5 pl-5 mt-5" style="width:350px;height:450px;"></div>
+
+<div id="cashinflow" class="netchart  mt-5" style="overflow:auto;height:450px;"></div>
 <div class="row justify-content-center">
   <div class="col-lg-8 col-md-8">
 	 <div class="content table-responsive table-full-width">
@@ -59,47 +59,47 @@
                                         <th class="col-xs-1">MONTH</th>
                                         <th class="col-xs-1">CASH INFLOW</th>
                                         <th class="col-xs-1">CASH OUTFLOW</th>
-                                       
+
                                     </thead>
                                     <tbody>
 
-                          
+
 
                                         <tr>
                                             <td>Mar 2018</td>
 											<td>BHD 450.000</td>
                                             <td>BHD 600.000</td>
-                                       
+
                                         </tr>
 										 <tr>
                                             <td>Feb 2018</td>
 											<td>BHD 423.000</td>
                                             <td>BHD 676.000</td>
-                                       
+
                                         </tr>
 										 <tr>
                                             <td>Jan 2018</td>
 											<td>BHD 368.000</td>
                                             <td>BHD 723.000</td>
-                                       
+
                                         </tr>
 										 <tr>
                                             <td>Dec 2017</td>
 											<td>BHD 178.000</td>
                                             <td>BHD 543.000</td>
-                                       
+
                                         </tr>
 										 <tr>
                                             <td>Nov 2017</td>
 											<td>BHD 232.000</td>
                                             <td>BHD 334.000</td>
-                                       
+
                                         </tr>
 										 <tr>
                                             <td>Oct 2017</td>
 											<td>BHD 345.000</td>
                                             <td>BHD 265.000</td>
-                                       
+
                                         </tr>
 
                                     </tbody>
@@ -128,7 +128,7 @@
 
         </div>
 
-
+    </main>
 
 
 
@@ -153,15 +153,15 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>        
-    <script type="text/javascript" src="../js/popper.min.js"></script>    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../js/mdb.min.js"></script>
     <script type="text/javascript" src="../js/app/insights.js"></script>
-    
+
     <script>
         // Material Select Initialization
         $(document).ready(function () {
